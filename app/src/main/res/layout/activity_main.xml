@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cxy.com.loadingview.MainActivity">
+
+   <cxy.com.loadviewlib.LoadingView
+       android:id="@+id/loadingview"
+       android:layout_width="match_parent"
+       android:layout_weight="111"
+       android:layout_height="match_parent" />
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+
+       android:layout_height="wrap_content">
+      <Button
+          android:text="重新开始"
+          android:id="@+id/btn_start"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_marginLeft="25dp"
+          android:layout_marginRight="25dp"
+          android:layout_height="wrap_content" />
+      <Button
+          android:layout_marginLeft="25dp"
+          android:layout_marginRight="25dp"
+          android:id="@+id/btn_stop"
+          android:text="暂停"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content" />
+   </LinearLayout>
+</LinearLayout>
